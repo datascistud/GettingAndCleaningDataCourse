@@ -13,23 +13,23 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 "
 
 These are 33 signals (-XYZ ones are 3 separate signals for the 3 axes), for each one there are 2 variables, one for the mean (suffixed with -mean() and one for the standard deviation, suffixed with -std(), for 3-axial signals, the -X/-Y/-Z suffix comes after that in the label of the variable), summing up to the 66 variables, each represented by a column of the table and labeled accordingly. These original measurement variable names are used, which come from `features.txt`, also supplied with the original data set.
@@ -38,4 +38,4 @@ The data set contains measurements of these signals for different subjects and a
 
 There are 6 different activity types: 1) WALKING, 2) WALKING_UPSTAIRS, 3) WALKING_DOWNSTAIRS, 4) SITTING, 5) STANDING, 6) LAYING, outcomes are represented by these activity labels, which as well come from the original data set (`activity_labels.txt`).
 
-The data set transformation provides two data sets, a final one and one optional intermediary data set. The intermediary contains all the different measurements, one per row, the subject and the identified activity being additional 2 variables (as 'subject' and 'activity'). The final data set aggregates the measurements, for each subject-activity pair it provides a single row containing the averages of the measurement variables. There are 30 subjects and 6 activity types, therefore there are 30x6=180 rows. The final data set does not contain the 'subject' and 'activity' variables, instead the rows are named as '<activity label>.<subject>'.
+The data set transformation provides two data sets, a final one and one optional intermediary data set. The intermediary contains all the different measurements, one per row, the subject and the identified activity being additional 2 variables (as 'subject' and 'activity'). The final data set aggregates the measurements, for each subject-activity pair it provides a single row containing the averages of the measurement variables. There are 30 subjects and 6 activity types, therefore there are 30x6=180 rows. The final data set does not contain the 'subject' and 'activity' variables, instead the rows are named as '< activity label >.< subject >'.
